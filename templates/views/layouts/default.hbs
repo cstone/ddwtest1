@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DDW Test Website 1</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700" rel="stylesheet">
+	<link href="/styles/site.css" rel="stylesheet">
+	<link href="/styles/mystyles.css" rel="stylesheet">
+
+	{{!-- This file provides the default styling for the KeystoneJS Content Editor
+        - only renders when user is logged in and admin--}}
+	{{{isAdminEditorCSS user}}}
+
+	{{!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    //- Safely remove this block if you are not targeting IE8 --}}
+	<!--[if lt IE 9]>
+	<script src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.js"></script>
+	<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+<div class="header-section">
+	<div class="top-bar">
+		<div class="container">
+
+
+			<div class="row">
+				<div class="col-md-2">
+					<div class="logo"><a href="#"><img src="https://s3.amazonaws.com/agaddwtest/images/logo.png" alt=""
+													   class="logodesktop"><img
+							src="https://s3.amazonaws.com/agaddwtest/images/logo-mobile.png" alt="" class="logomobile"></a>
+					</div>
+				</div>
+
+				<div class="col-md-10">
+
+
+					<div class="pull-right">
+						<div class="search-area">
+							<input type="text" placeholder="Search">
+							<button id="#" type="button" class="btn btn-default" aria-label="search"><span
+									class="fa fa-search"></span></button>
+						</div>
+					</div> <!-- pull-right -->
+
+					<div class="pull-right">
+						<div class="social-media">
+							<a href="https://www.facebook.com/DDWMeeting" target="_blank"><i class="fa fa-facebook"></i></a>
+							<a href="https://twitter.com/DDWMeeting" target="_blank"><i class="fa fa-twitter"></i></a>
+							<a href="https://www.youtube.com/user/DDWMeeting" target="_blank"><i
+									class="fa fa-youtube-play"></i></a>
+							<a href="https://www.instagram.com/ddwmeeting" target="_blank"><i
+									class="fa fa-instagram"></i></a>
+						</div>
+					</div> <!-- pull-right -->
+
+					<div class="pull-right">
+						<ul role="menubar" class="topnav">
+							<li><a href="http://ddw.org/contactus">Contact Us</a></li>
+							<li><a href="http://ddw.org/new-item1">Mobile App</a></li>
+							<li><a href="https://higherlogicdownload.s3.amazonaws.com/GASTRO/44b1f1fd-aaed-44c8-954f-b0eaea6b0462/UploadedFiles/OzkzCuvjTFWx9ssX44BO_2017FinancialDisclosureIndex.pdf">Disclosures</a></li>
+							<li><a href="https://www.healthecareers.com/ddw/search-jobs/">Career Center</a></li>
+							<li><a href="http://blog.ddw.org/">DDW Blog</a></li>
+						</ul>
+					</div>
+
+
+				</div> <!-- col-md-9 -->
+			</div>
+
+		</div> <!-- container closed-->
+	</div> <!-- top-bar closed -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+								data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li class="dropdown active"><a href="" class="dropdown-toggle" data-toggle="dropdown"><span>Register</span>
+								<strong class="caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li class="active"><a href="/pages/registration">Registration</a></li>
+									<li><a href="/pages/housing">Housing</a></li>
+									<li><a href="/pages/housing-travel-host">Host City &amp; Travel Arrangements</a>
+									</li>
+									<li class="dropdown-submenu"><a href="/pages/international">International
+										Attendees</a>
+										<ul class="dropdown-submenu">
+											<li><a href="/pages/invitation-letter">Request Invitation Letter</a></li>
+										</ul>
+									</li>
+									<li><a href="/pages/guide">First-Time Attendee Guide</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown"><span>Attendee Planning</span>
+								<strong class="caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li><a href="/pages/program-planning-resources">Program Planning Resources</a></li>
+									<li><a href="/pages/scope-out-the-exhibit-hall">Scope Out the Exhibit Hall</a></li>
+									<li><a href="/pages/networking-events">Networking Events</a></li>
+									<li><a href="/pages/mobile-app">Mobile App</a></li>
+									<li><a href="/pages/online-planner">Online Planner</a></li>
+									<li><a href="/pages/on-site-locations-and-information">On-Site Locations &amp; Information</a></li>
+									<li><a href="/pages/ddw-tracks">DDW Tracks</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown"><span>Education</span>
+								<strong class="caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li><a href="/pages/scientific-sessions">Scientific Sessions</a></li>
+									<li><a href="/pages/abstracts">Abstracts</a></li>
+									<li><a href="/pages/poster-hall">Poster Hall</a></li>
+									<li class="dropdown-submenu"><a href="/pages/cme-credit-and-certificate-of-attendance">CME Credit &amp; Certificate of
+										Attendance </a>
+										<ul class="dropdown-submenu">
+											<li><a href="/pages/society-cme-statements">Society CME Statements</a></li>
+										</ul>
+									</li>
+									<li><a href="/pages/session-recordings">Session Recordings</a></li>
+									<li><a href="http://bluetoad.com/publication/?i=375505" target="_blank">Preliminary Program</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown"><span>Exhibitor Information</span>
+								<strong class="caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li><a href="/pages/reserve-your-space">Reserve Your Space</a></li>
+									<li><a href="http://s23.a2zinc.net/clients/DDW/DDW17/Public/EventMap.aspx?shMode=E" target="_blank">Floor Plan</a></li>
+									<li><a href="http://s23.a2zinc.net/clients/DDW/DDW17/Public/Enter.aspx" target="_blank">Exhibitor Portal</a></li>
+									<li><a href="/pages/exhibitor-policies">Exhibitor Policies</a></li>
+									<li><a href="/pages/meet-the-exhibitor-council">Meet the Exhibitor Council</a></li>
+									<li><a href="/pages/host-an-on-site-meeting">Host an On-Site Meeting</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown"><span>News &amp; Media</span>
+								<strong class="caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li><a href="/pages/onsite-news">DDW Daily News &amp; DDW TV</a></li>
+									<li><a href="/pages/press-room">Press Room</a></li>
+									<li><a href="/pages/press-releases">Press Releases</a></li>
+									<li><a href="/pages/social-media">Social Media</a></li>
+									<li><a href="/pages/media-policy">Media Policy</a></li>
+									<li><a href="/pages/guidelines">Guidelines &amp; License for Use of DDW Content</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown"><span>Presenters</span>
+								<strong class="caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li><a href="/pages/submit-an-abstract">Submit an Abstract</a></li>
+									<li><a href="/pages/travel-awards">Travel Awards</a></li>
+									<li><a href="/pages/presenter-resources-1">Presenter Resources</a></li>
+								</ul>
+							</li>
+						</ul>
+
+
+					</div><!--/.nav-collapse -->
+
+				</nav>
+
+			</div>
+		</div>
+
+	</div> <!-- container closed -->
+
+</div> <!-- header-section closed -->
+
+<div class="headerimage"><img src="https://s3.amazonaws.com/agaddwtest/images/header-img1.jpg" alt="">
+	<div class="pagetitle"><h1>{{data.page.title}}</h1></div>
+
+</div>
+<div id="body">
+	
+	<!--
+        Flash messages allow you to display once-off status messages to users, e.g. form
+        validation errors, success messages, etc
+    -->
+	{{#if messages}}
+		<div id="flash-messages" class="container">
+			{{#if messages.info}}
+				<div class="alert alert-info">
+					{{{flashMessages messages.info}}}
+				</div>
+			{{/if}}
+			{{#if messages.success}}
+				<div class="alert alert-success">
+					{{{flashMessages messages.success}}}
+				</div>
+			{{/if}}
+			{{#if messages.warning}}
+				<div class="alert alert-warning">
+					{{{flashMessages messages.warning}}}
+				</div>
+			{{/if}}
+			{{#if messages.error}}
+				<div class="alert alert-danger">
+					{{{flashMessages messages.error}}}
+				</div>
+			{{/if}}
+		</div>
+	{{/if}}
+	<!-- The content block should contain the body of your template's content-->
+	{{{body}}}
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bluecontent footer1">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-event"><img src="https://higherlogicdownload.s3.amazonaws.com/GASTRO/44b1f1fd-aaed-44c8-954f-b0eaea6b0462/UploadedImages/ddw18b.png"></div>
+			<div class="col-md-6 col-app">
+				<p><strong>Plan Your Itinerary with the Free DDW Mobile App.</strong> The free app helps you search scientific sessions, browse posters, and find everything you need to know at the event.</p>
+				<p>
+					<a class="app apple" href="#"><img src="https://higherlogicdownload.s3.amazonaws.com/GASTRO/44b1f1fd-aaed-44c8-954f-b0eaea6b0462/UploadedImages/apple-hover.png"></a>
+					<a class="app google" href="http://ativ.me/bre"><img src="https://higherlogicdownload.s3.amazonaws.com/GASTRO/44b1f1fd-aaed-44c8-954f-b0eaea6b0462/UploadedImages/google-hover.png"></a>
+				</p>
+			</div>
+			<div class="col-md-3 col-contact">
+				<p><img src="https://higherlogicdownload.s3.amazonaws.com/GASTRO/44b1f1fd-aaed-44c8-954f-b0eaea6b0462/UploadedImages/ddw-white.png"></p>
+				<p><strong>Contact Us</strong><br>
+					301-272-0022<br>
+					ddwadmin@gastro.org</p>
+				<p>Digestive Disease Week<br>
+					4930 Del Ray Avenue<br>
+					Bethesda, MD 20814</p>
+			</div>
+		</div> <!-- row -->
+	</div> <!-- container -->
+</div> <!-- bg-blue footer1 -->
+
+<div class="graycontent footer" align="center">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="list-inline">
+
+					<li class="static" role="menuitem"><a href="" class="level1 selected">Register</a>
+						<ul class="level2 static" tabindex="0" role="menubar">
+							<li class="static" role="menuitem"><a href="" class="level2">Registration</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">Housing</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">Host City &amp; Travel Arrangements</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">International Attendees</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">First-Time Attendee Guide</a></li>
+						</ul>
+					</li>
+
+					<li class="static" role="menuitem"><a href="" class="level1">Attendee Planning</a>
+						<ul class="level2 static" tabindex="0" role="menubar">
+							<li class="static" role="menuitem"><a href="" class="level2">Program Planning Resources</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">Scope Out the Exhibit Hall</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">Networking Events</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">Mobile App</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">Online Planner</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">On-Site Locations &amp; Information</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">DDW Tracks</a></li>
+						</ul>
+					</li>
+					<li class="static" role="menuitem"><a href="" class="level1">Education</a>
+						<ul class="level2 static" tabindex="0" role="menubar">
+							<li class="static" role="menuitem"><a href="" class="level2">Scientific Sessions</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">Abstracts</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">Poster Hall</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">CME Credit &amp; Certificate of Attendance</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">Session Recordings</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2" target="_blank">Preliminary Program</a></li>
+						</ul>
+					</li>
+					<li class="static" role="menuitem"><a href="" class="level1">Exhibitor Information</a>
+						<ul class="level2 static" tabindex="0" role="menubar">
+							<li class="static" role="menuitem"><a href="" class="level2">Reserve Your Space</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2" target="_blank">Floor Plan</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2" target="_blank">Exhibitor Portal</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">Exhibitor Policies</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">Meet the Exhibitor Council</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">Host an On-Site Meeting</a></li>
+						</ul>
+					</li>
+					<li class="static" role="menuitem"><a href="/news" class="level1">News &amp; Media</a>
+						<ul class="level2 static" tabindex="0" role="menubar">
+							<li class="static" role="menuitem"><a href="" class="level2">DDW Daily News &amp; DDW TV</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">Press Room</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">Press Releases</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">Social Media</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">Media Policy</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">Guidelines &amp; License for Use of DDW Content</a></li>
+						</ul>
+					</li>
+					<li class="static" role="menuitem"><a href="" class="level1">Presenters</a>
+						<ul class="level2 static" tabindex="0" role="menubar">
+							<li class="static" role="menuitem"><a href="" class="level2">Submit an Abstract</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">Travel Awards</a></li>
+							<li class="static" role="menuitem"><a href="" class="level2">Presenter Resources</a></li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+		</div> <!-- row -->
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="sponsorlinks">
+					<div class="sponsorlinkscontent">
+						<strong>Sponsoring Societies:</strong>
+						<a href="http://www.aasld.org/" target="_blank">AASLD</a> |
+						<a href="http://www.gastro.org/" target="_blank">AGA</a> |
+						<a href="http://www.asge.org/" target="_blank">ASGE</a> |
+						<a href="http://ssat.com/" target="_blank">SSAT</a>
+					</div>
+
+				</div>
+			</div>  <!-- col-md-12 -->
+		</div>
+	</div> <!-- container-->
+</div> <!--footer -->
+
+<div class="bluecontent footer2">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-links">
+				<p><a href="privacy">Privacy Policy</a> | &copy; 2016 Digestive Disease Week. All Rights Reserved.</p>
+			</div>
+
+			<div class="col-md-6 col-credits">
+				<p>Site Designed by <a target="_blank" href="">Brightfind</a> and Powered by <a target="_blank" href="">Higher Logic</a> <span><a href="" target="_blank"><i class="fa fa-facebook"></i></a><a href="" target="_blank"><i class="fa fa-twitter"></i></a><a href="" target="_blank"><i class="fa fa-youtube-play"></i></a><a href="https://www.instagram.com/ddwmeeting" target="_blank"><i class="fa fa-instagram"></i></a></span></p>       </div>
+
+		</div> <!-- row -->
+	</div>
+</div> <!-- bluecontent footer2 -->
+{{!--
+    //- jQuery 1.11.3 is included by default, and required by both Bootstrap
+    //- and the KeystoneJS Content Editor. If you are not targeting IE8,
+    //- you can upgrade to 2.1.4 (also bundled) for better performance.
+--}}
+<script src="/js/jquery/jquery-1.11.3.min.js"></script>
+{{!--
+    //- Customise which Bootstrap javascript files are served by including
+    //- them specifically here, instead of bootstrap-3.3.5.min.js
+--}}
+<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
+{{{isAdminEditorJS user}}}
+</body>
+</html>

@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DDW Test Website 1</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic'
+		  rel='stylesheet' type='text/css'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700" rel="stylesheet">
+
+
+	<!--[if gt IE 8]>
+	<link href='https://d2x5ku95bkycr3.cloudfront.net/jquery/bootstrap-combined-3.0.0/css/bootstrap-combined.min.css'
+		  rel='stylesheet'/>
+	<![endif]-->
+	<!--[if lt IE 9]>
+	<link rel='stylesheet' type='text/css'
+		  href='http://b.connectedcommunity.org/higherlogic/css/bootstrap-combined.min.css'/><![endif]-->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js'></script>
+	<script src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'></script>
+	<![endif]-->
+	<link type='text/css' rel='stylesheet'
+		  href='https://d2x5ku95bkycr3.cloudfront.net/ScriptBundles/R4/Css/514/Desktop_bundle.min.css'/>
+	<link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/themes/base/jquery-ui.css' type='text/css'
+		  rel='stylesheet'/>
+	<link href='/Generated.css?k=912981a1-8252-4dc7-bf31-55ce3d7691af&d=636300929534400000' type='text/css'
+		  rel='stylesheet'/>
+	<link type='text/css' rel='stylesheet' href='https://s3.amazonaws.com/agaassets/js/open_link.js'/>
+	<style type="text/css">
+		/* <![CDATA[ */
+		#AuxMenu img.icon {
+			border-style: none;
+			vertical-align: middle;
+		}
+
+		#AuxMenu img.separator {
+			border-style: none;
+			display: block;
+		}
+
+		#AuxMenu img.horizontal-separator {
+			border-style: none;
+			vertical-align: middle;
+		}
+
+		#AuxMenu ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			width: auto;
+		}
+
+		#AuxMenu ul.dynamic {
+			z-index: 1;
+		}
+
+		#AuxMenu a {
+			text-decoration: none;
+			white-space: nowrap;
+			display: block;
+		}
+
+		#AuxMenu a.static {
+			text-decoration: none;
+			border-style: none;
+			padding-left: 0.15em;
+			padding-right: 0.15em;
+		}
+
+		#AuxMenu a.popout {
+			background-image: url("/WebResource.axd?d=YAYach_zykzn7tRotFpEUup3eGoCmUF_gB2eiL-h8NebNNSxFR1P2Up45RF2PIqBlf5gv1SoGJlXC6Ao5Qi6X_H1nok1&t=636060169580094377");
+			background-repeat: no-repeat;
+			background-position: right center;
+			padding-right: 14px;
+		}
+
+		/* ]]> */
+	</style>
+
+
+	<link href="/styles/site.css" rel="stylesheet">
+	<link href="/styles/mystyles.css" rel="stylesheet">
+
+	{{!-- This file provides the default styling for the KeystoneJS Content Editor
+        - only renders when user is logged in and admin--}}
+	{{{isAdminEditorCSS user}}}
+
+	{{!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    //- Safely remove this block if you are not targeting IE8 --}}
+	<!--[if lt IE 9]>
+	<script src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.js"></script>
+	<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+
+</head>
+<body class="bodyBackground  interior">
+<div id="MPOuterHeader" class="row siteFrame stickyNav stickyNav-full">
+	<div class="col-md-12">
+		<div id="HEADER" class="row">
+			<div class="col-md-12">
+
+				<div class="ContentUserControl">
+
+					<script charset="utf-8">$('html').addClass('hs');
+					var bodyEl = $("body");
+					$(window).on("scroll", function () {
+						var scrollTop = $(this).scrollTop();
+						$("#MPOuter").each(function () {
+							var el = $(this),
+									className = el.attr("id");
+							if (el.offset().top < scrollTop) {
+								bodyEl.addClass(className);
+							} else {
+								bodyEl.removeClass(className);
+							}
+						});
+					});</script>
+				</div>
+				<div class="ContentUserControl addedsearch">
+
+					<script type="text/javascript">
+
+						function pageLoad() {
+
+							$('#AddlContentHeaderTop_ctl03_SearchOptions').click(function (e) {
+								e.stopPropagation();
+							});
+
+							$('#AddlContentHeaderTop_ctl03_SearchWhole').click(function () {
+								$('#AddlContentHeaderTop_ctl03_hiddenSearchWhole').click();
+							});
+
+							if ('False' == 'False' || 'False' == 'True') {
+								$('#AddlContentHeaderTop_ctl03_SearchOptions').find('#SearchCriteria').hide();
+							}
+
+							if ('False' == 'True') {
+
+								if ($('#AddlContentHeaderTop_ctl03_DateRangeDDL').find(":selected").text() == 'on this day') {
+									$('#AddlContentHeaderTop_ctl03_SearchOptionsEndDate').hide();
+								}
+								else {
+									$('#AddlContentHeaderTop_ctl03_SearchOptionsEndDate').show();
+								}
+
+								$('#AddlContentHeaderTop_ctl03_WholeSearchTerm').focus(function () {
+									$('#AddlContentHeaderTop_ctl03_SearchOptions').show();
+								});
+
+								$('#AddlContentHeaderTop_ctl03_DateRangeDDL').change(function () {
+									if ($('#AddlContentHeaderTop_ctl03_DateRangeDDL').find(":selected").text() == 'on this day') {
+										$('#AddlContentHeaderTop_ctl03_SearchOptionsEndDate').hide();
+										$('#AddlContentHeaderTop_ctl03_SearchOptionsEndDate').val("");
+									}
+									else {
+										$('#AddlContentHeaderTop_ctl03_SearchOptionsEndDate').show();
+									}
+								});
+							}
+						}
+
+					</script>
+
+					<div class="">
+
+
+						<div id="AddlContentHeaderTop_ctl03_SearchInputs" class="SearchInputs">
+
+
+							<div id="AddlContentHeaderTop_ctl03_WholeSearch"
+								 onkeypress="javascript:return WebForm_FireDefaultButton(event, 'AddlContentHeaderTop_ctl03_hiddenSearchWhole')">
+
+
+								<div class="input-group" style="vertical-align: middle">
+
+									<input name="ctl00$AddlContentHeaderTop$ctl03$WholeSearchTerm"
+										   id="AddlContentHeaderTop_ctl03_WholeSearchTerm" class="form-control"
+										   placeholder="Search" title="Search" type="text">
+
+									<div class="input-group-btn">
+
+										<button id="AddlContentHeaderTop_ctl03_SearchWhole" type="button"
+												class="btn btn-default  " role="button" aria-label="search">
+											<span class="glyphicon glyphicon-search"
+												  style="vertical-align: middle"></span>
+
+										</button>
+
+										<button type="button" class="btn btn-default dropdown-toggle"
+												data-toggle="dropdown" aria-label="search options">
+											<span class="caret"></span>
+											<span class="sr-only">Search Options</span>
+										</button>
+
+										<ul class="dropdown-menu pull-right" role="menu">
+											<li>
+												<div id="AddlContentHeaderTop_ctl03_SearchOptions"
+													 class="SearchOptions">
+
+													<div class="form-group">
+														<div class="col-sm-4 col-md-4">
+															<label for="AddlContentHeaderTop_ctl03_SearchOptionsProductList"
+																   id="AddlContentHeaderTop_ctl03_Label1">Content
+																types</label>
+															<br>
+															<span id="AddlContentHeaderTop_ctl03_SearchOptionsProductList"
+																  class="checkbox"><input
+																	id="AddlContentHeaderTop_ctl03_SearchOptionsProductList_0"
+																	name="ctl00$AddlContentHeaderTop$ctl03$SearchOptionsProductList$0"
+																	checked="checked" value="Announcement"
+																	type="checkbox"><label
+																	for="AddlContentHeaderTop_ctl03_SearchOptionsProductList_0">Announcements</label><br><input
+																	id="AddlContentHeaderTop_ctl03_SearchOptionsProductList_1"
+																	name="ctl00$AddlContentHeaderTop$ctl03$SearchOptionsProductList$1"
+																	checked="checked" value="Blog"
+																	type="checkbox"><label
+																	for="AddlContentHeaderTop_ctl03_SearchOptionsProductList_1">Blogs</label><br><input
+																	id="AddlContentHeaderTop_ctl03_SearchOptionsProductList_2"
+																	name="ctl00$AddlContentHeaderTop$ctl03$SearchOptionsProductList$2"
+																	checked="checked" value="Community" type="checkbox"><label
+																	for="AddlContentHeaderTop_ctl03_SearchOptionsProductList_2">Communities</label><br><input
+																	id="AddlContentHeaderTop_ctl03_SearchOptionsProductList_3"
+																	name="ctl00$AddlContentHeaderTop$ctl03$SearchOptionsProductList$3"
+																	checked="checked" value="Egroup"
+																	type="checkbox"><label
+																	for="AddlContentHeaderTop_ctl03_SearchOptionsProductList_3">Discussions</label><br><input
+																	id="AddlContentHeaderTop_ctl03_SearchOptionsProductList_4"
+																	name="ctl00$AddlContentHeaderTop$ctl03$SearchOptionsProductList$4"
+																	checked="checked" value="CalendarEvent"
+																	type="checkbox"><label
+																	for="AddlContentHeaderTop_ctl03_SearchOptionsProductList_4">Events</label><br><input
+																	id="AddlContentHeaderTop_ctl03_SearchOptionsProductList_5"
+																	name="ctl00$AddlContentHeaderTop$ctl03$SearchOptionsProductList$5"
+																	checked="checked" value="Glossary"
+																	type="checkbox"><label
+																	for="AddlContentHeaderTop_ctl03_SearchOptionsProductList_5">Glossary</label><br><input
+																	id="AddlContentHeaderTop_ctl03_SearchOptionsProductList_6"
+																	name="ctl00$AddlContentHeaderTop$ctl03$SearchOptionsProductList$6"
+																	checked="checked" value="Navigation"
+																	type="checkbox"><label
+																	for="AddlContentHeaderTop_ctl03_SearchOptionsProductList_6">Site Content</label><br><input
+																	id="AddlContentHeaderTop_ctl03_SearchOptionsProductList_7"
+																	name="ctl00$AddlContentHeaderTop$ctl03$SearchOptionsProductList$7"
+																	checked="checked" value="Library"
+																	type="checkbox"><label
+																	for="AddlContentHeaderTop_ctl03_SearchOptionsProductList_7">Libraries</label></span>
+														</div>
+														<div class="col-sm-4 col-md-4">
+															<span id="AddlContentHeaderTop_ctl03_SearchOptionsDateRange">Date range</span><br>
+															<br>
+															<select name="ctl00$AddlContentHeaderTop$ctl03$DateRangeDDL"
+																	id="AddlContentHeaderTop_ctl03_DateRangeDDL"
+																	class="form-control">
+																<option value="on this day">on this day</option>
+																<option value="between these dates">between these
+																	dates
+																</option>
+
+															</select><br>
+															<br>
+															<div id="AddlContentHeaderTop_ctl03_SearchOptionsStartDate"
+																 class="form-input">
+
+																<div id="AddlContentHeaderTop_ctl03_SearchOptionsStartDate_dateTimePicker"
+																	 class="input-group date">
+
+																	<input name="ctl00$AddlContentHeaderTop$ctl03$SearchOptionsStartDate$ucTextBox"
+																		   id="AddlContentHeaderTop_ctl03_SearchOptionsStartDate_ucTextBox"
+																		   title="Start Date" class="form-control"
+																		   placeholder="Start date" type="text">
+																	<span class="input-group-addon">
+            <span class="glyphicon-calendar glyphicon"></span>
+        </span>
+
+																</div>
+																<span id="AddlContentHeaderTop_ctl03_SearchOptionsStartDate_RangeValidator1"
+																	  class="control-label" style="display:none;">Not a valid date</span>
+
+
+															</div>
+
+															<script type="text/javascript">
+																$(document).ready(function () {
+																	initializeDateTimePicker_ctl00$AddlContentHeaderTop$ctl03$SearchOptionsStartDate();
+
+																	if (Sys.WebForms.PageRequestManager != null) // This is for when the control is inside UpdatePanel.
+																		Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestFunction);
+
+																	function EndRequestFunction(sender, args) {
+																		initializeDateTimePicker_ctl00$AddlContentHeaderTop$ctl03$SearchOptionsStartDate();
+																	}
+
+																});
+
+																var DateTimePicker_ctl00$AddlContentHeaderTop$ctl03$SearchOptionsStartDate = null;
+
+																function initializeDateTimePicker_ctl00$AddlContentHeaderTop$ctl03$SearchOptionsStartDate() {
+
+																	$(function () {
+
+																		var datetimeOpts = {
+																			pickTime: false,
+																			showToday: true,
+																			onSelect: function (dateText, inst) {
+																				$(this).find('input:first').blur().change().focus();
+																			},
+																			onClose: function (dateText, inst) {
+																				$(this).find('input:first').blur().change().focus();
+																			},
+																			icons: {
+																				time: 'glyphicon glyphicon-time',
+																				date: 'glyphicon glyphicon-calendar',
+																				up: 'glyphicon glyphicon-chevron-up',
+																				down: 'glyphicon glyphicon-chevron-down'
+																			}
+																		};
+
+																		DateTimePicker_ctl00$AddlContentHeaderTop$ctl03$SearchOptionsStartDate = $('#AddlContentHeaderTop_ctl03_SearchOptionsStartDate_dateTimePicker').datetimepicker(datetimeOpts);
+
+																		$('#AddlContentHeaderTop_ctl03_SearchOptionsStartDate_dateTimePicker').on("dp.hide", function (e) {
+
+																			// WARNING: If the hide event is enabled, Make sure that you are showing BOTH the
+																			// date and time picker. When the time picker is not used, the Bootstrap
+																			// date time picker will auto hide the date picker when you select a date.
+																			// This will trigger the date time picker change event which in turn triggers
+																			// the hide event IF ShowPickTime is FALSE. This will create an infinite loop
+
+
+																			$('#AddlContentHeaderTop_ctl03_SearchOptionsStartDate_ucTextBox').focus();
+																		});
+
+
+																	});
+																}
+															</script>
+															<div id="AddlContentHeaderTop_ctl03_SearchOptionsEndDate"
+																 class="form-input">
+
+																<div id="AddlContentHeaderTop_ctl03_SearchOptionsEndDate_dateTimePicker"
+																	 class="input-group date">
+
+																	<input name="ctl00$AddlContentHeaderTop$ctl03$SearchOptionsEndDate$ucTextBox"
+																		   id="AddlContentHeaderTop_ctl03_SearchOptionsEndDate_ucTextBox"
+																		   title="End date" class="form-control"
+																		   placeholder="End date" type="text">
+																	<span class="input-group-addon">
+            <span class="glyphicon-calendar glyphicon"></span>
+        </span>
+
+																</div>
+																<span id="AddlContentHeaderTop_ctl03_SearchOptionsEndDate_RangeValidator1"
+																	  class="control-label" style="display:none;">Not a valid date</span>
+
+
+															</div>
+
+															<script type="text/javascript">
+																$(document).ready(function () {
+																	initializeDateTimePicker_ctl00$AddlContentHeaderTop$ctl03$SearchOptionsEndDate();
+
+																	if (Sys.WebForms.PageRequestManager != null) // This is for when the control is inside UpdatePanel.
+																		Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestFunction);
+
+																	function EndRequestFunction(sender, args) {
+																		initializeDateTimePicker_ctl00$AddlContentHeaderTop$ctl03$SearchOptionsEndDate();
+																	}
+
+																});
+
+																var DateTimePicker_ctl00$AddlContentHeaderTop$ctl03$SearchOptionsEndDate = null;
+
+																function initializeDateTimePicker_ctl00$AddlContentHeaderTop$ctl03$SearchOptionsEndDate() {
+
+																	$(function () {
+
+																		var datetimeOpts = {
+																			pickTime: false,
+																			showToday: true,
+																			onSelect: function (dateText, inst) {
+																				$(this).find('input:first').blur().change().focus();
+																			},
+																			onClose: function (dateText, inst) {
+																				$(this).find('input:first').blur().change().focus();
+																			},
+																			icons: {
+																				time: 'glyphicon glyphicon-time',
+																				date: 'glyphicon glyphicon-calendar',
+																				up: 'glyphicon glyphicon-chevron-up',
+																				down: 'glyphicon glyphicon-chevron-down'
+																			}
+																		};
+
+																		DateTimePicker_ctl00$AddlContentHeaderTop$ctl03$SearchOptionsEndDate = $('#AddlContentHeaderTop_ctl03_SearchOptionsEndDate_dateTimePicker').datetimepicker(datetimeOpts);
+
+																		$('#AddlContentHeaderTop_ctl03_SearchOptionsEndDate_dateTimePicker').on("dp.hide", function (e) {
+
+																			// WARNING: If the hide event is enabled, Make sure that you are showing BOTH the
+																			// date and time picker. When the time picker is not used, the Bootstrap
+																			// date time picker will auto hide the date picker when you select a date.
+																			// This will trigger the date time picker change event which in turn triggers
+																			// the hide event IF ShowPickTime is FALSE. This will create an infinite loop
+
+
+																			$('#AddlContentHeaderTop_ctl03_SearchOptionsEndDate_ucTextBox').focus();
+																		});
+
+
+																	});
+																}
+															</script>
+														</div>
+														<div class="col-sm-4 col-md-4">
+															<span id="AddlContentHeaderTop_ctl03_SearchOptionsPostedBy">Posted by</span><br>
+															<br>
+															<input name="ctl00$AddlContentHeaderTop$ctl03$SearchOptionsFirstName"
+																   id="AddlContentHeaderTop_ctl03_SearchOptionsFirstName"
+																   class="form-control" placeholder="First name"
+																   title="First name" type="text"><br>
+															<input name="ctl00$AddlContentHeaderTop$ctl03$SearchOptionsLastName"
+																   id="AddlContentHeaderTop_ctl03_SearchOptionsLastName"
+																   class="form-control" placeholder="Last name"
+																   title="Last name" type="text"><br>
+															<input name="ctl00$AddlContentHeaderTop$ctl03$SearchOptionsCompanyName"
+																   id="AddlContentHeaderTop_ctl03_SearchOptionsCompanyName"
+																   class="form-control" placeholder="Company"
+																   title="Company" type="text"><br>
+															<input name="ctl00$AddlContentHeaderTop$ctl03$SearchOptionsEmailAddress"
+																   id="AddlContentHeaderTop_ctl03_SearchOptionsEmailAddress"
+																   class="form-control" placeholder="Email address"
+																   title="Email address" type="text">
+														</div>
+													</div>
+
+												</div>
+											</li>
+										</ul>
+
+									</div>
+
+									<input name="ctl00$AddlContentHeaderTop$ctl03$hiddenSearchWhole" value=""
+										   onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$AddlContentHeaderTop$ctl03$hiddenSearchWhole&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))"
+										   id="AddlContentHeaderTop_ctl03_hiddenSearchWhole" style="display: none;"
+										   type="submit">
+
+								</div>
+
+
+							</div>
+
+
+						</div>
+
+						<div id="AddlContentHeaderTop_ctl03_ResultPanel" class="SearchResults">
+
+
+							<div id="SearchCriteria"
+								 style="background-color: #ebebeb; padding: 10px 25px; display: none;">
+								<span id="SearchCriteriaLabel" style="font-size: 10px; color: #333333;">search criteria = </span><span
+									id="SearchTerm" style="font-size: 11px; font-weight: bold; color: #666666">
+                ALL</span>
+							</div>
+
+
+						</div>
+
+					</div>
+
+				</div>
+				<div class="ContentItemHtml networking">
+					<div class="HtmlContent"><a href="https://www.facebook.com/DDWMeeting" target="_blank"><i
+							class="fa fa-facebook"></i></a>
+						<a href="https://twitter.com/DDWMeeting" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.youtube.com/user/DDWMeeting" target="_blank"><i
+								class="fa fa-youtube-play"></i></a>
+						<a href="https://www.instagram.com/ddwmeeting" target="_blank"><i
+								class="fa fa-instagram"></i></a></div>
+					<div class="HtmlFooter"></div>
+				</div>
+				<div class="ContentItemHtml hidden">
+					<div class="HtmlContent"></div>
+					<div class="HtmlFooter"></div>
+				</div>
+				<div class="ContentItemHtml">
+					<div class="HtmlContent">
+						<style>
+							table.ddw1 * {
+								font-family: 'Open Sans';
+							}
+
+							table.ddw1 tbody > tr:first-child td {
+								background: #053c60 none repeat scroll 0 0;
+								font-size: 14px;
+								font-weight: normal;
+								padding: 10px;
+								white-space: nowrap;
+							}
+
+							table.ddw1 td {
+								border: 1px solid #eee !important;
+								padding: 10px !important;
+							}
+
+							<
+							style >
+							<
+
+							/
+							body >
+							<
+
+							/
+							html >
+						</style>
+					</div>
+					<div class="HtmlFooter"></div>
+				</div>
+				<div id="MPimage" class="MPimage">
+					<div id="mainskiplinkholder" class="skiplinkholder"><a id="skiplink" href="#MPContentArea">Skip to
+						main content (Press Enter).</a></div>
+					<div id="MPheader" class="MPheader">
+						<div class="row">
+							<div class="col-md-12">
+
+								<div class="pull-right">
+									<div class="inline">
+
+
+										<div class="HLWelcome HLWelcomeHeader">
+
+											<script type="text/javascript">
+
+												$(document).ready(function () {
+													$('.Picture_Profile').tipTip({delay: 200});
+												});
+
+												function toggleHelp() {
+
+													if ($("ul#CompleteBarHelpContainer").is(":visible")) {
+														$("ul#CompleteBarHelpContainer").hide();
+													} else {
+														$("ul#CompleteBarHelpContainer").show();
+													}
+												}
+
+												$("span.CompleteBarClose").live('click', function (e) {
+
+													e.stopPropagation();
+													toggleHelp();
+													$(".btn-group").find('button#BtnShowProfile').dropdown('toggle');
+												});
+
+											</script>
+
+
+											<div class="EndDiv">
+											</div>
+											<div id="Welcome_NotLoggedIn" class="Login">
+
+												<a id="Welcome_LoginLink" class="btn btn-primary"
+												   href="http://www.gastro.org/hl/login?service=http%3a%2f%2fddw.org%2fpresenter%2fpresenter-resources">Sign
+													in to MyDDW</a>
+
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+
+								<div class="pull-right">
+									<div id="auxskiplinkholder" class="skiplinkholder">
+										<a id="auxskiplink" href="#Logo">Skip auxiliary navigation (Press Enter).</a>
+									</div>
+									<div id="MPAuxNav" class="inline vertical-align-middle">
+										<div cssselectorclass="MPAuxNav" id="AuxMenu" style="float: left;">
+											<ul class="level1 static" tabindex="0"
+												style="position: relative; width: auto; float: left;" role="menubar">
+												<li role="menuitem" class="static"
+													style="position: relative; float: left;"><a
+														title="How to get in contact with us"
+														class="level1 MPAuxNav static" href="/contactus" tabindex="-1">Contact
+													Us</a></li>
+												<li role="menuitem" class="static"
+													style="position: relative; float: left;"><a
+														class="level1 MPAuxNav static" href="/new-item1" tabindex="-1">Mobile
+													App</a></li>
+												<li role="menuitem" class="static"
+													style="position: relative; float: left;"><a
+														class="level1 MPAuxNav static" href="/disclosures"
+														target="_blank" tabindex="-1">Disclosures</a></li>
+												<li role="menuitem" class="static"
+													style="position: relative; float: left;"><a
+														class="level1 MPAuxNav static" href="/careercenter"
+														target="_blank" tabindex="-1">Career Center</a></li>
+												<li role="menuitem" class="static"
+													style="position: relative; float: left;"><a
+														class="level1 MPAuxNav static" href="/new-item" target="_blank"
+														tabindex="-1">DDW Blog</a></li>
+											</ul>
+										</div>
+										<div style="clear: left;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="Logo" class="row" role="banner">
+							<div class="col-md-12">
+								<div id="DesktopLogoDiv" class="LogoImg inline">
+									<a href="/home" style="">
+										<img class="img-responsive"
+											 src="https://higherlogicdownload.s3.amazonaws.com/GASTRO/44b1f1fd-aaed-44c8-954f-b0eaea6b0462/UploadedImages/ddw-color.png"
+											 alt="DDW Website"></a>
+								</div>
+
+								<div class="SloganText inline"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="clear: both"></div>
+
+				<div class="ContentItemHtml">
+					<div class="HtmlContent">
+						<script type="text/javascript">
+							feathr_account_id = "5818fc487c1fea1278ec944e";
+							(function () {
+								var loadBoomer = function () {
+									if (!/complete|loaded/.test(document.readyState)) {
+										setTimeout(loadBoomer, 10);
+										return
+									}
+									var scr = document.createElement("script");
+									scr.src = "//cdn.feathr.co/js/boomerang.min.js";
+									scr.async = true;
+									__feathr_loaded = true;
+									(document.getElementsByTagName('head')[0] || document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+								};
+								if (/complete|loaded/.test(document.readyState)) {
+									setTimeout(loadBoomer, 10);
+								}
+								else if (window.addEventListener) {
+									window.addEventListener('load', loadBoomer, false);
+								}
+								else {
+									window.attachEvent('onload', loadBoomer)
+								}
+							}());
+						</script>
+					</div>
+					<div class="HtmlFooter"></div>
+				</div>
+			</div>
+		</div>
+		<div id="NAV" class="row traditional-nav">
+			<div class="col-md-12">
+
+				<div id="navskiplinkholder" class="skiplinkholder"><a id="navskiplink" class="sr-only"
+																	  href="#MPSearchBlock">Skip main navigation (Press
+					Enter).</a></div>
+				<div id="MPButtonBar">
+					<nav class="navbar navbar-default">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse"
+									data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="btn btn-primary btn-search" href="search"><i class="fa fa-search"></i></a>
+						</div>
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<div class="row">
+								<div class="col-md-12 ">
+
+									<ul class="nav navbar-nav">
+										<li class="dropdown"><a href="/register" class="dropdown-toggle"
+																data-toggle="dropdown"><span>Register</span> <strong
+												class="caret"></strong></a>
+											<ul class="dropdown-menu">
+												<li><a href="/register/registration">Registration</a></li>
+												<li><a href="/register/housing">Housing</a></li>
+												<li><a href="/register/housing-travel-host">Host City &amp; Travel
+													Arrangements</a></li>
+												<li class="dropdown-submenu"><a href="/register/international">International
+													Attendees <strong class="caret"></strong></a>
+													<ul class="dropdown-submenu">
+														<li><a href="/register/international/invitation-letter">Request
+															Invitation Letter</a></li>
+													</ul>
+												</li>
+												<li><a href="/register/guide">First-Time Attendee Guide</a></li>
+											</ul>
+										</li>
+										<li class="dropdown"><a href="/attendee-planning" class="dropdown-toggle"
+																data-toggle="dropdown"><span>Attendee Planning</span>
+											<strong class="caret"></strong></a>
+											<ul class="dropdown-menu">
+												<li><a href="/attendee-planning/resources">Program Planning
+													Resources</a></li>
+												<li><a href="/attendee-planning/exhibit-hall">Scope Out the Exhibit
+													Hall</a></li>
+												<li><a href="/attendee-planning/networking">Networking Events</a></li>
+												<li><a href="/attendee-planning/mobile-app">Mobile App</a></li>
+												<li><a href="/attendee-planning/online-planner">Online Planner</a></li>
+												<li><a href="/attendee-planning/on-site-information">On-Site Locations
+													&amp; Information</a></li>
+												<li><a href="/attendee-planning/tracks">DDW Tracks</a></li>
+											</ul>
+										</li>
+										<li class="dropdown"><a href="/education" class="dropdown-toggle"
+																data-toggle="dropdown"><span>Education</span> <strong
+												class="caret"></strong></a>
+											<ul class="dropdown-menu">
+												<li><a href="/education/sessions">Scientific Sessions</a></li>
+												<li><a href="/education/abstracts">Abstracts</a></li>
+												<li><a href="/education/posterhall">Poster Hall</a></li>
+												<li class="dropdown-submenu"><a href="/education/cme">CME Credit &amp;
+													Certificate of Attendance <strong class="caret"></strong></a>
+													<ul class="dropdown-submenu">
+														<li><a href="/education/cme/society-cme-statements">Society CME
+															Statements</a></li>
+													</ul>
+												</li>
+												<li><a href="/education/session-recordings">Session Recordings</a></li>
+												<li><a href="/education/preliminary-program" target="_blank">Preliminary
+													Program</a></li>
+											</ul>
+										</li>
+										<li class="dropdown"><a href="/exhibitor-information" class="dropdown-toggle"
+																data-toggle="dropdown"><span>Exhibitor Information</span>
+											<strong class="caret"></strong></a>
+											<ul class="dropdown-menu">
+												<li><a href="/exhibitor-information/reserve">Reserve Your Space</a></li>
+												<li><a href="/exhibitor-information/floor-plan" target="_blank">Floor
+													Plan</a></li>
+												<li><a href="/exhibitor-information/exhibitor-portal" target="_blank">Exhibitor
+													Portal</a></li>
+												<li><a href="/exhibitor-information/policies">Exhibitor Policies</a>
+												</li>
+												<li><a href="/exhibitor-information/industry-advisory-council">Meet the
+													Exhibitor Council</a></li>
+												<li><a href="/exhibitor-information/onsite-meeting">Host an On-Site
+													Meeting</a></li>
+											</ul>
+										</li>
+										<li class="dropdown"><a href="/news" class="dropdown-toggle"
+																data-toggle="dropdown"><span>News &amp; Media</span>
+											<strong class="caret"></strong></a>
+											<ul class="dropdown-menu">
+												<li><a href="/news/onsite-news">DDW Daily News &amp; DDW TV</a></li>
+												<li><a href="/news/press">Press Room</a></li>
+												<li><a href="/news/releases">Press Releases</a></li>
+												<li><a href="/news/social-media">Social Media</a></li>
+												<li><a href="/news/media-policy">Media Policy</a></li>
+												<li><a href="/news/guidelines">Guidelines &amp; License for Use of DDW
+													Content</a></li>
+											</ul>
+										</li>
+										<li class="dropdown active"><a href="/presenter" class="dropdown-toggle"
+																	   data-toggle="dropdown"><span>Presenters</span>
+											<strong class="caret"></strong></a>
+											<ul class="dropdown-menu">
+												<li><a href="/presenter/submit">Submit an Abstract</a></li>
+												<li><a href="/presenter/travel-awards">Travel Awards</a></li>
+												<li class="active"><a href="/presenter/presenter-resources">Presenter
+													Resources</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="MenuBarUnderline">
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<div id="MPOuter" class="row siteFrame " style="padding-top: 155px;">
+
+
+	<div id="ContentColumn" class="col-md-12">
+		<!--content-->
+
+
+		<div class="ContentUserControl">
+
+			<script charset="utf-8">$('#BreadCrumb').insertAfter('#PageTitleH1');</script>
+		</div>
+		<div class="ContentUserControl">
+
+			<script charset="utf-8">$('.no-stickynav').closest('body').addClass('no-sticky');</script>
+		</div>
+		<!--end content-->
+	</div>
+
+</div>
+
+
+<!--  THIS IS THE BEGINNING OF THE OLD HEADER TO DELETE -->
+<div id="header">
+	<div class="container">
+		<div role="navigation" class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+					<a href="/" class="navbar-brand">DDW Test Website 1</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-left">
+						{{# each navLinks}}
+							<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
+								<a href="{{ href }}">{{ label }}</a>
+							</li>
+						{{/each}}
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						{{#if user}}
+							<li><a href="/keystone/signout">Sign Out</a></li>
+						{{else}}
+							<li><a href="/keystone/signin">Sign In</a></li>
+						{{/if}}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--  THIS IS THE END OF OLD HEADER TO DELETE -->
+
+
+<div id="body">
+	<!--
+        Flash messages allow you to display once-off status messages to users, e.g. form
+        validation errors, success messages, etc
+    -->
+	{{#if messages}}
+		<div id="flash-messages" class="container">
+			{{#if messages.info}}
+				<div class="alert alert-info">
+					{{{flashMessages messages.info}}}
+				</div>
+			{{/if}}
+			{{#if messages.success}}
+				<div class="alert alert-success">
+					{{{flashMessages messages.success}}}
+				</div>
+			{{/if}}
+			{{#if messages.warning}}
+				<div class="alert alert-warning">
+					{{{flashMessages messages.warning}}}
+				</div>
+			{{/if}}
+			{{#if messages.error}}
+				<div class="alert alert-danger">
+					{{{flashMessages messages.error}}}
+				</div>
+			{{/if}}
+		</div>
+	{{/if}}
+	<!-- The content block should contain the body of your template's content-->
+	{{{body}}}
+</div>
+
+
+<!-- THIS IS THE BEGINNING OF MY FOOTER -->
+
+
+<div class="ContentItemHtml reverse bg-blue footer1 contain-inner">
+	<div class="HtmlContent">
+		<div class="row">
+			<div class="col-md-3 col-event"><img
+					src="https://higherlogicdownload.s3.amazonaws.com/GASTRO/44b1f1fd-aaed-44c8-954f-b0eaea6b0462/UploadedImages/ddw18b.png">
+			</div>
+			<div class="col-md-6 col-app">
+				<p><strong>Plan Your Itinerary with the Free DDW Mobile App.</strong> The free app helps you search
+					scientific sessions, browse posters, and find everything you need to know at the event.</p>
+				<p><a class="app apple" href="http://ativ.me/brd"><img
+						src="https://higherlogicdownload.s3.amazonaws.com/GASTRO/44b1f1fd-aaed-44c8-954f-b0eaea6b0462/UploadedImages/apple-hover.png"></a>
+					<a class="app google" href="http://ativ.me/bre"><img
+							src="https://higherlogicdownload.s3.amazonaws.com/GASTRO/44b1f1fd-aaed-44c8-954f-b0eaea6b0462/UploadedImages/google-hover.png"></a>
+				</p>
+			</div>
+			<div class="col-md-3 col-contact">
+				<p>
+					<img src="https://higherlogicdownload.s3.amazonaws.com/GASTRO/44b1f1fd-aaed-44c8-954f-b0eaea6b0462/UploadedImages/ddw-white.png">
+				</p>
+				<p><strong>Contact Us</strong><br>
+					301-272-0022<br>
+					ddwadmin@gastro.org</p>
+				<p>Digestive Disease Week<br>
+					4930 Del Ray Avenue<br>
+					Bethesda, MD 20814</p>
+			</div>
+		</div>
+	</div>
+	<div class="HtmlFooter"></div>
+</div>
+
+
+<div id="MPOuterFooter" class="row siteFrame">
+	<div id="FOOTER" class="col-md-12">
+		<div class="row">
+			<div class="col-md-12">
+
+
+			</div>
+		</div>
+		<div id="MPFooter" class="row">
+			<div class="Footer col-md-12">
+				<div id="FooterContent">
+
+
+				</div>
+				<div id="MPBottomMenu" class="MPBottomMenu" align="center">
+					<ul class="FatFooterMenu list-inline">
+						<li class="static" role="menuitem"><a href="/register" class="level1">Register</a>
+							<ul class="level2 static" tabindex="0" role="menubar">
+								<li class="static" role="menuitem"><a href="/register/registration" class="level2">Registration</a>
+								</li>
+								<li class="static" role="menuitem"><a href="/register/housing"
+																	  class="level2">Housing</a></li>
+								<li class="static" role="menuitem"><a href="/register/housing-travel-host"
+																	  class="level2">Host City &amp; Travel
+									Arrangements</a></li>
+								<li class="static" role="menuitem"><a href="/register/international" class="level2">International
+									Attendees</a></li>
+								<li class="static" role="menuitem"><a href="/register/guide" class="level2">First-Time
+									Attendee Guide</a></li>
+							</ul>
+						</li>
+						<li class="static" role="menuitem"><a href="/attendee-planning" class="level1">Attendee
+							Planning</a>
+							<ul class="level2 static" tabindex="0" role="menubar">
+								<li class="static" role="menuitem"><a href="/attendee-planning/resources"
+																	  class="level2">Program Planning Resources</a></li>
+								<li class="static" role="menuitem"><a href="/attendee-planning/exhibit-hall"
+																	  class="level2">Scope Out the Exhibit Hall</a></li>
+								<li class="static" role="menuitem"><a href="/attendee-planning/networking"
+																	  class="level2">Networking Events</a></li>
+								<li class="static" role="menuitem"><a href="/attendee-planning/mobile-app"
+																	  class="level2">Mobile App</a></li>
+								<li class="static" role="menuitem"><a href="/attendee-planning/online-planner"
+																	  class="level2">Online Planner</a></li>
+								<li class="static" role="menuitem"><a href="/attendee-planning/on-site-information"
+																	  class="level2">On-Site Locations &amp;
+									Information</a></li>
+								<li class="static" role="menuitem"><a href="/attendee-planning/tracks" class="level2">DDW
+									Tracks</a></li>
+							</ul>
+						</li>
+						<li class="static" role="menuitem"><a href="/education" class="level1">Education</a>
+							<ul class="level2 static" tabindex="0" role="menubar">
+								<li class="static" role="menuitem"><a href="/education/sessions" class="level2">Scientific
+									Sessions</a></li>
+								<li class="static" role="menuitem"><a href="/education/abstracts" class="level2">Abstracts</a>
+								</li>
+								<li class="static" role="menuitem"><a href="/education/posterhall" class="level2">Poster
+									Hall</a></li>
+								<li class="static" role="menuitem"><a href="/education/cme" class="level2">CME Credit
+									&amp; Certificate of Attendance</a></li>
+								<li class="static" role="menuitem"><a href="/education/session-recordings"
+																	  class="level2">Session Recordings</a></li>
+								<li class="static" role="menuitem"><a href="/education/preliminary-program"
+																	  class="level2" target="_blank">Preliminary
+									Program</a></li>
+							</ul>
+						</li>
+						<li class="static" role="menuitem"><a href="/exhibitor-information" class="level1 selected">Exhibitor
+							Information</a>
+							<ul class="level2 static" tabindex="0" role="menubar">
+								<li class="static" role="menuitem"><a href="/exhibitor-information/reserve"
+																	  class="level2">Reserve Your Space</a></li>
+								<li class="static" role="menuitem"><a href="/exhibitor-information/floor-plan"
+																	  class="level2" target="_blank">Floor Plan</a></li>
+								<li class="static" role="menuitem"><a href="/exhibitor-information/exhibitor-portal"
+																	  class="level2" target="_blank">Exhibitor
+									Portal</a></li>
+								<li class="static" role="menuitem"><a href="/exhibitor-information/policies"
+																	  class="level2">Exhibitor Policies</a></li>
+								<li class="static" role="menuitem"><a
+										href="/exhibitor-information/marketing-opportunities" class="level2">Marketing
+									Opportunities</a></li>
+								<li class="static" role="menuitem"><a
+										href="/exhibitor-information/frequently-asked-questions" class="level2">FAQs</a>
+								</li>
+								<li class="static" role="menuitem"><a
+										href="/exhibitor-information/industry-advisory-council" class="level2">Meet the
+									Exhibitor Council</a></li>
+								<li class="static" role="menuitem"><a href="/exhibitor-information/onsite-meeting"
+																	  class="level2">Host an On-Site Meeting</a></li>
+							</ul>
+						</li>
+						<li class="static" role="menuitem"><a href="/news" class="level1">News &amp; Media</a>
+							<ul class="level2 static" tabindex="0" role="menubar">
+								<li class="static" role="menuitem"><a href="/news/onsite-news" class="level2">DDW Daily
+									News &amp; DDW TV</a></li>
+								<li class="static" role="menuitem"><a href="/news/press" class="level2">Press Room</a>
+								</li>
+								<li class="static" role="menuitem"><a href="/news/releases" class="level2">Press
+									Releases</a></li>
+								<li class="static" role="menuitem"><a href="/news/social-media" class="level2">Social
+									Media</a></li>
+								<li class="static" role="menuitem"><a href="/news/media-policy" class="level2">Media
+									Policy</a></li>
+								<li class="static" role="menuitem"><a href="/news/guidelines" class="level2">Guidelines
+									&amp; License for Use of DDW Content</a></li>
+							</ul>
+						</li>
+						<li class="static" role="menuitem"><a href="/presenter" class="level1">Presenters</a>
+							<ul class="level2 static" tabindex="0" role="menubar">
+								<li class="static" role="menuitem"><a href="/presenter/submit" class="level2">Submit an
+									Abstract</a></li>
+								<li class="static" role="menuitem"><a href="/presenter/travel-awards" class="level2">Travel
+									Awards</a></li>
+								<li class="static" role="menuitem"><a href="/presenter/presenter-resources"
+																	  class="level2">Presenter Resources</a></li>
+							</ul>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="MPCopyright" class="col-md-12">
+
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="ContentItemHtml sponsorlinks">
+					<div class="HtmlContent"><strong>Sponsoring Societies:</strong>
+						<a href="http://www.aasld.org/" target="_blank">AASLD</a> |
+						<a href="http://www.gastro.org/" target="_blank">AGA</a> |
+						<a href="http://www.asge.org/" target="_blank">ASGE</a> |
+						<a href="http://ssat.com/" target="_blank">SSAT</a></div>
+					<div class="HtmlFooter"></div>
+				</div>
+				<div class="ContentUserControl">
+
+					<script charset="utf-8">$('.footer2').insertAfter('#MPOuterFooter');
+					$('.networking a').clone().appendTo('.col-credits span');
+					$('.footer1').insertAfter('#MPOuter');
+					$('#MPTopOfPageAds').insertBefore('#BreadCrumb, .footer1');</script>
+				</div>
+				<div class="ContentUserControl">
+
+					<script charset="utf-8">$('.btn-search').insertAfter('.navbar-toggle');</script>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="ContentItemHtml footer2 contain-inner">
+	<div class="HtmlContent">
+		<div class="row">
+			<div class="col-md-6 col-links">
+				<p><a href="privacy">Privacy Policy</a> | © 2016 Digestive Disease Week. All Rights Reserved.</p>
+			</div>
+			<div class="col-md-6 col-credits">
+				<p>Site Designed by <a target="_blank" href="http://www.brightfind.com">Brightfind</a> and Powered by <a
+						target="_blank" href="http://higherlogic.com">Higher Logic</a> <span><a
+						href="https://www.facebook.com/DDWMeeting" target="_blank"><i class="fa fa-facebook"></i></a><a
+						href="https://twitter.com/DDWMeeting" target="_blank"><i class="fa fa-twitter"></i></a><a
+						href="https://www.youtube.com/user/DDWMeeting" target="_blank"><i
+						class="fa fa-youtube-play"></i></a><a href="https://www.instagram.com/ddwmeeting"
+															  target="_blank"><i class="fa fa-instagram"></i></a></span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="HtmlFooter"></div>
+</div>
+
+
+<!-- THIS IS THE END OF MY FOOTER -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{!--
+    //- jQuery 1.11.3 is included by default, and required by both Bootstrap
+    //- and the KeystoneJS Content Editor. If you are not targeting IE8,
+    //- you can upgrade to 2.1.4 (also bundled) for better performance.
+--}}
+<script src="/js/jquery/jquery-1.11.3.min.js"></script>
+{{!--
+    //- Customise which Bootstrap javascript files are served by including
+    //- them specifically here, instead of bootstrap-3.3.5.min.js
+--}}
+<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
+{{{isAdminEditorJS user}}}
+</body>
+</html>
