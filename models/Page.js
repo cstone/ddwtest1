@@ -5,7 +5,7 @@ var Page = new keystone.List('Page', {
 	map: {name: 'title'},
 	singular: 'Page',
 	plural: 'Pages',
-	autokey: {path: 'slug', from: 'title', unique: true}
+	autokey: {path: 'slug', from: 'title', unique: true},
 });
 
 	
@@ -13,11 +13,12 @@ var Page = new keystone.List('Page', {
 Page.add({
 	title: { type: String, required: true},
 	permalink: {type: String},
-	body: {type: {type: Types.Html, wysiwyg: true, height: 500}},
+	description:  { type: Types.Html, wysiwyg: true, height: 400 },
 	published: {type: Boolean},
 	image: {type: Types.CloudinaryImage},
 	publishedDate: {type: Date, default: Date.now}
 });
+
 
 
 Page.register();

@@ -7,10 +7,10 @@ exports = module.exports = function (req, res) {
 	//set locals
 	locals.section = "sitemap";
 	locals.filters = {
-		page: req.params.page
+		page: req.params.page,
 	}
 	locals.data = {
-		pages:[]
+		pages:[],
 	}
 
 	//load
