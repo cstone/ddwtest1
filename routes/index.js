@@ -18,36 +18,31 @@
  * http://expressjs.com/api.html#app.VERB
  */
 
-
-
 var keystone = require('keystone');
+var middleware = require('./middleware');
+var importRoutes = keystone.importer(__dirname);
 
-exports = module.exports = function (req, res) {
-	var view = new keystone.View(req, res);
-	var locals = res.locals;
+// Common Middleware
+keystone.pre('routes', middleware.initLocals);
+keystone.pre('render', middleware.flashMessages);
 
-	//set locals
-	locals.section = "sitemap";
-	locals.filters = {
-		page: 'home',
-	}
-	locals.data = {
-		pages:[],
-	}
+// Import Route Controllers
+var routes = {
+	views: importRoutes('./views'),
+};
 
-	//load
-	view.on('init', function(next){
-		var q = keystone.list('Page').model.findOne({
-			slug: locals.filters.page
-		});
+// Setup Route Bindings
+exports = module.exports = function (app) {
+	// Views
+	app.get('/', routes.views.index);
+	app.get('/blog/:category?', routes.views.blog);
+	app.get('/blog/post/:post', routes.views.post);
+	app.get('/gallery', routes.views.gallery);
+	app.get('/pages', routes.views.pages);
+	app.get('/pages/:page', routes.views.page);
+	app.all('/contact', routes.views.contact);
 
-		q.exec(function(err, result){
-			locals.data.page = result;
-			next(err);
-		});
-	});
-
-	//Render View
-	view.render('page', { layout: 'home' });
+	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
+	// app.get('/protected', middleware.requireUser, routes.views.protected);
 
 };

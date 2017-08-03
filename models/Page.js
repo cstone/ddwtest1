@@ -12,6 +12,7 @@ var Page = new keystone.List('Page', {
 	
 Page.add({
 	title: { type: String, required: true},
+	name: { type: String},
 	permalink: {type: String},
 	description:  { type: Types.Html, wysiwyg: true, height: 400 },
 	published: {type: Boolean},
