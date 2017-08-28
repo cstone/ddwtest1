@@ -196,13 +196,13 @@ body.MPOuter #MPOuterHeader, .interior #MPOuterHeader {
 }
 body.MPOuter #HEADER .fa, .interior #HEADER .fa {color:#8D8D8A}
 
-body.home .navbar-default .navbar-nav > li > a {color:#fff }
-body.home.MPOuter  .navbar-default .navbar-nav > li > a,
-body.home.MPOuter #MPAuxNav ul.level1 li a  {color:#5F6A72}
-.interior .addedsearch, body.home.MPOuter .addedsearch {border-color:#939393}
+.navbar-default .navbar-nav > li > a {color:#fff }
+.MPOuter  .navbar-default .navbar-nav > li > a,
+.MPOuter #MPAuxNav ul.level1 li a  {color:#5F6A72}
+.interior .addedsearch, .MPOuter .addedsearch {border-color:#939393}
 
 .interior .addedsearch .glyphicon,
-body.home.MPOuter .addedsearch .glyphicon {color:#5F6A72}
+.MPOuter .addedsearch .glyphicon {color:#5F6A72}
 
 #DesktopLogoDiv img {
 	max-width: 150px; visibility:hidden;
@@ -654,7 +654,7 @@ ul.topnav li
 
 ul.topnav li a
 {
-	color:#ffffff;
+	color:#333;
 	margin:0px 5px;
 	text-decoration:none;
 	font-size:14px;
