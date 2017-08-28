@@ -431,13 +431,13 @@ iframe {
 	position: relative;
 }
 
-body.bodyBackground {
+.bodyBackground {
 	background-color: #003f5f;
 	font-size: 16px;
 	font-family: 'Open Sans'
 }
 
-body.bodyBackground.interior {
+.bodyBackground.interior {
 	background-color: #fff
 }
 
@@ -450,7 +450,7 @@ body.bodyBackground.interior {
 	text-decoration: none;
 }
 
-#HEADER .form-control:focus + div .glyphicon {
+.form-control:focus + div .glyphicon {
 	opacity: .2
 }
 
@@ -471,15 +471,15 @@ div#MPOuterHeader {
 	text-decoration: none;
 }
 
-body.bodyBackground.home:not(.MPOuter) #HEADER .SearchInputs input {
+.SearchInputs input {
 	color: #fff;
 }
 
-body.MPOuter #MPOuterHeader, .interior #MPOuterHeader {
+ .interior #MPOuterHeader {
 	background-color: rgba(255, 255, 255, 0.9);
 }
 
-body.MPOuter #HEADER .fa, .interior #HEADER .fa {
+.fa {
 	color: #8D8D8A
 }
 
