@@ -1448,7 +1448,7 @@ ul.dropdown-menu li {
 }
 
 .nav ul.dropdown-menu a {
-	color: #ffffff;
+	color: #444;
 }
 
 .navbar .navbar-nav .open .dropdown-menu > .active > a, .navbar .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar .navbar-nav .open .dropdown-menu > .active > a:hover {
