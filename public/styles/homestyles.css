@@ -1358,7 +1358,7 @@ img.logodesktop {
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
-	background-color: rgba(1, 1, 1, 0.05);
+	/*background-color: rgba(1, 1, 1, 0.05);*/
 	background-image: none;
 	box-shadow: none;
 }
