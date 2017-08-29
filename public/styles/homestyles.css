@@ -1995,3 +1995,10 @@ h2::after, .hstyle1 h2::after {
 	margin-top: 0.4em;
 	font-weight: bold;
 }
+
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
