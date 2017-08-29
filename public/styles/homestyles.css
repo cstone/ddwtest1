@@ -60,7 +60,7 @@ fieldset legend { /*background-color: ;*/ /*border-color: ;*/ /*color: ;*/
 }
 
 /*  #MPButtonBar .dropdown-menu {      background-color: ;  }  */ /*  #MPButtonBar .dropdown-menu li a {      color: ;  }  */ /*  #MPButtonBar .dropdown-menu li a:hover,    #MPButtonBar .dropdown-menu li a:focus {       background-color: ;  }  */
-#MPButtonBar .dropdown-menu .active > a, #MPButtonBar li .dropdown-menu .active > a:hover, #MPButtonBar .dropdown-menu .dropdown-submenu .active a:hover, #MPButtonBar .dropdown-submenu .dropdown-submenu .active a:hover { /*background-color: ;*/ /*color: ;*/
+#MPButtonBar .dropdown-menu .active > a, #MPButtonBar li .dropdown-menu .active > a:hover, #MPButtonBar .dropdown-menu .dropdown-menu .active a:hover, #MPButtonBar .dropdown-menu .dropdown-menu .active a:hover { /*background-color: ;*/ /*color: ;*/
 }
 
 /*  #MPButtonBar .dropdown-menu {      border-color: ;  }  */ /************************ Bootstrap Buttons ***********************/
@@ -296,11 +296,11 @@ h1, h2, h3, h4 {
 	border: 0px none
 }
 
-.nav.navbar-nav .dropdown-submenu > ul.dropdown-submenu {
+.nav.navbar-nav .dropdown-menu > ul.dropdown-menu {
 	text-align: left
 }
 
-.nav.navbar-nav .dropdown-submenu > ul.dropdown-submenu li {
+.nav.navbar-nav .dropdown-menu > ul.dropdown-menu li {
 	padding-left: 0px;
 	margin-left: 0px
 }
@@ -919,7 +919,7 @@ body.interior #DesktopLogoDiv a {
 		left: 0px;
 	}
 
-	.nav.navbar-nav .dropdown-submenu > ul.dropdown-submenu {
+	.nav.navbar-nav .dropdown-menu > ul.dropdown-menu {
 		margin-left: 10px
 	}
 
@@ -1100,7 +1100,7 @@ body.interior #DesktopLogoDiv a {
 		border-bottom: 0px solid #ccc;
 	}
 
-	.nav.navbar-nav .dropdown-submenu > ul.dropdown-submenu {
+	.nav.navbar-nav .dropdown-menu > ul.dropdown-menu {
 		margin-bottom: 5px;
 		margin-top: -3px
 	}
@@ -1115,12 +1115,12 @@ body.interior #DesktopLogoDiv a {
 		margin-left: 0px !important
 	}
 
-	.nav.navbar-nav .dropdown-submenu > ul.dropdown-submenu {
+	.nav.navbar-nav .dropdown-menu > ul.dropdown-menu {
 		padding-left: 0px;
 		margin-left: 0px
 	}
 
-	.nav ul.dropdown-submenu a {
+	.nav ul.dropdown-menu a {
 		color: #888;
 	}
 
@@ -1389,6 +1389,11 @@ ul.dropdown-menu li {
 
 }
 
+.dropdown-menu > li > a {
+	text-decoration: none !important;
+	text-align: left;
+}
+
 .navbar-nav li:last-child .dropdown-menu, .navbar-nav li:nth-last-child(2) .dropdown-menu {
 	left: inherit;
 	right: 0;
@@ -1418,7 +1423,7 @@ ul.dropdown-menu li {
 	padding: 3px 0px;
 }
 
-.dropdown-menu > li > a:hover, .nav.navbar-nav .dropdown-submenu > ul.dropdown-submenu li a:hover {
+.dropdown-menu > li > a:hover, .nav.navbar-nav .dropdown-menu > ul.dropdown-menu li a:hover {
 	background-image: none;
 	background-color: #eeeeee;
 	text-decoration: none
@@ -1430,19 +1435,19 @@ ul.dropdown-menu li {
 	white-space: normal;
 }
 
-.nav.navbar-nav .dropdown-submenu > ul.dropdown-submenu li {
+.nav.navbar-nav .dropdown-menu > ul.dropdown-menu li {
 	margin-left: 0;
 	padding-left: 0;
 	list-style-type: none;
 }
 
-.nav.navbar-nav .dropdown-submenu > ul.dropdown-submenu {
+.nav.navbar-nav .dropdown-menu > ul.dropdown-menu {
 	margin-bottom: 5px;
 	margin-top: -3px;
 	padding: 0px;
 }
 
-.nav ul.dropdown-submenu a {
+.nav ul.dropdown-menu a {
 	color: #444;
 }
 
